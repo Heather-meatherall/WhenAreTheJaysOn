@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>When Are The Jays On?</title>
+    <link rel="stylesheet" href="./style/style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="./js/main.js"></script>
+    
+
+</head>
+
+
+
+<body onload="loadGames()">
+    
+    <h1>When Are The Jays On?</h1>
+
+    <!-- Create Form -->
+    <form id="playingToday">
+        <h3>Are The Blue Jays Playing Today?</h3>
+        <p id="answer"></p>
+        <p id="game"></p>
+        <p id="day"></p>
+        <p id="time"></p>
+        <p id="error1"></p>
+        <h2 id="cheer"></h2>
+        
+
+        <button onclick="playingToday(event)" class="check">?</a> </button>
+
+        
+    </form>
+
+    <details class="collapsible">
+        <summary>
+           <strong>Schedule</strong>
+        </summary>
+        <h3 id="range"></h3>
+        <p id="error2"></p>
+        <table id = "games" style="list-style-type:none;"></table>
+</details>
+
+<br>
+
+     <div class="popup" onclick="popup()"> <i class="material-icons">info</i>
+        <span class="popuptext" id="popupText">
+        <p>Created by: <a href="https://heather-meatherall.github.io/">Heather Meatherall</a></p>
+        <p>Not affiliated with the Toronto Blue Jays</p>    
+        </span>
+    </div> 
+
+
+    
+</body>
+
+
+</html>

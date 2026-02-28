@@ -1,0 +1,132 @@
+/* Styling the Body element */
+body {
+    font-family: Verdana;
+    text-align: center;
+    background-color: #134a8e;
+    color: white
+}
+
+form {
+    background-color: white;
+    color: #1d2d5c;
+    max-width: 500px;
+    margin: 50px auto;
+    margin-bottom: 0px !important;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.check{
+    background-color: #e8291c;
+    color: white;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.check:hover{
+    background-color: white;
+    background-image: url("img/baseball.png");
+    background-size: 75px;
+    font-size: 0;
+
+}
+
+.collapsible 
+{
+    background-color: white;
+    color: #134a8e;
+    max-width: 500px;
+    margin: 50px auto;
+    margin-bottom: 0px !important;
+    padding: 30px 20px;
+    margin-top: 0px;
+    box-shadow: none;
+    border: 1px solid #777;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+summary::marker {
+    color:#e8291c;
+
+}
+
+
+table {
+    font-size: 14px;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+tr {
+    border: 1px solid #80b0d8;
+}
+
+th, td {
+  padding: 10px;
+  
+}
+
+a {
+    color: white;
+}
+form a, details a {
+    color: #e8291c;
+}
+.popup a {
+    color: black;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #80b0d8;
+  color: #1d2d5c;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -200px;
+  border: 1px solid white;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
